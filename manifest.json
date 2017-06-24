@@ -1,0 +1,36 @@
+{
+  "description": "Automatic web browsing, traffic increase",
+  "manifest_version": 2,
+  "name": "AutoSurf",
+  "version": "1.0",
+  "homepage_url": "http://notlaptrinh.com/",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://notlaptrinh.com/",
+        "http://notlaptrinh.net/"
+      ],
+      "js": [
+        "notlaptrinh.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    "notlaptrinh-content.js"
+  ]
+}
