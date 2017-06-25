@@ -20,8 +20,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://notlaptrinh.com/",
-        "http://notlaptrinh.net/"
+        "http://notlaptrinh.com/nlthit.php",
+        "http://notlaptrinh.net/nlthit.php"
       ],
       "js": [
         "notlaptrinh.js"

@@ -4,8 +4,8 @@ console.log('background.js');
 var hit = 0;
 var tabId = 0;
 var urls = [
-	"http://notlaptrinh.com/",
-	"http://notlaptrinh.net/"
+	"http://notlaptrinh.com/nlthit.php",
+	"http://notlaptrinh.net/nlthit.php"
 ];
 
 //Mình tổng hợp được một số User-Agent thông dụng với Screen Size của nó.
